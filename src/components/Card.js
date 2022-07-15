@@ -10,7 +10,7 @@ function Card(props) {
           <div class="card-body text-center">
               <h5 class="card-title">{props.data.phone}</h5>
               <p class="card-text">{props.data.price}</p>
-              <a href="#" class="btn btn-primary">Buy Now</a>
+              <Link to={`/product/card/${props.data.phone}`}  class="btn btn-primary">Buy Now</Link>
           </div>
     </div>
     </>
